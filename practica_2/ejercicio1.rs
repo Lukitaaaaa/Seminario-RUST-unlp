@@ -1,6 +1,9 @@
-fn es_par(n: i32) -> bool {
-    n % 2 == 0
-}
+/*
+1-Definir la función llamada es_par que recibe como parámetro un número entero y retorna
+true si el número es par, false caso contrario.
+
+*/
+
 
 fn main() {
     let numero = 3;
@@ -11,4 +14,7 @@ fn main() {
     }
 }
 
+fn es_par(n: i32) -> bool {
+    n % 2 == 0
+}
 

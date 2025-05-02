@@ -1,11 +1,8 @@
-fn duplicar_valores(mut a: [f32;5]) -> [f32;5]{
-    //numero flotante
-    for i in 0..a.len(){
-        a[i] = a[i]*2.0;
-    }
+/*
+5-Defina la función llamada duplicar_valores que recibe un arreglo de números flotantes y
+retorna un arreglo nuevo con los valores duplicados del parámetro.
+*/
 
-    return a;
-}
 
 fn main(){
     //array de flotantes
@@ -14,4 +11,13 @@ fn main(){
     for i in 0..array.len(){
         println!("{}",array[i]);
     }
+}
+
+fn duplicar_valores(mut a: [f32;5]) -> [f32;5]{
+    //numero flotante
+    for i in 0..a.len(){
+        a[i] = a[i]*2.0;
+    }
+
+    return a;
 }

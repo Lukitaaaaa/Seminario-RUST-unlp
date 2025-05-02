@@ -1,3 +1,9 @@
+/*
+10-Definir la función llamada cantidad_de_cadenas_mayor_a que recibe como parámetros
+un arreglo de String y un entero llamado límite. Esta función retorna la cantidad de Strings
+del arreglo que son de longitud mayor al parámetro límite.
+*/
+
 fn main(){
     let array: [String;5] = ["Hola".to_string(), "Mundo".to_string(), "Rust".to_string(), "Es".to_string(), "Genial".to_string()];
     let li: i32 = 5;

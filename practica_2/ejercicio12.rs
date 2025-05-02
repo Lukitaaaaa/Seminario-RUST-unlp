@@ -1,3 +1,8 @@
+/*
+12-Definir una función llamada reemplazar_pares que recibe un arreglo de enteros y
+reemplaza todos los números pares por -1.
+*/
+
 fn main(){
     let mut array: [i32; 5] = [2, 2, 4, 3, 5];
 

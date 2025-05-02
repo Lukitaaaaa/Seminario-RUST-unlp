@@ -1,3 +1,9 @@
+/*
+11-Definir la función llamada multiplicar_valores que recibe como parámetro un arreglo de
+enteros y otro número entero llamado factor. Esta función multiplica los valores del arreglo
+por el parámetro factor modificándolo.
+*/
+
 fn main() {
 
     let mut array: [i32; 5] = [2, 2, 4, 3, 5];

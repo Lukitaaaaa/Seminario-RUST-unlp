@@ -1,3 +1,11 @@
+/*
+9-Definir la función llamada cantidad_en_rango que recibe 3 parámetros: 1 arreglo de
+enteros, un número entero llamado inferior y otro número entero llamado superior. Esta
+función retorna la cantidad de números del arreglo que están entre el rango de los
+parámetros inferior y superior inclusive.
+
+*/
+
 fn main(){
     let array: [i32; 5] = [2, 2, 4, 3, 5];
     let li: i32 = 3;
