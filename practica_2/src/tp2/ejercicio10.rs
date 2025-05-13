@@ -4,14 +4,8 @@ un arreglo de String y un entero llamado límite. Esta función retorna la canti
 del arreglo que son de longitud mayor al parámetro límite.
 */
 
-fn main(){
-    let array: [String;5] = ["Hola".to_string(), "Mundo".to_string(), "Rust".to_string(), "Es".to_string(), "Genial".to_string()];
-    let li: i32 = 5;
-    let resultado = cantidad_de_cadenas_mayor_a(array, li);
-    println!("Cantidad de elementos con longitud mayor o igual a {}: {}", li, resultado);
-}
-
-fn cantidad_de_cadenas_mayor_a(arr:[String;5], li:i32)->i32{
+#[allow(dead_code)]
+pub fn cantidad_de_cadenas_mayor_a(arr:Vec<String>, li:i32)->i32{
     let mut cont:i32 = 0;
     for i in 0..arr.len(){
         if arr[i].len() as i32 >= li {
