@@ -31,8 +31,22 @@ mod tests {
 
     #[test]
     fn test_rectangulo(){
-        let rec1 = tp3::ejercicio2::Rectangulo::new(2, 4);
-        let rec2 = tp3::ejercicio2::Rectangulo::new(3, 3);
+        let rec1 = tp3::ejercicio2::Rectangulo::new(2.0, 4.0);
+        let rec2 = tp3::ejercicio2::Rectangulo::new(3.0, 3.0);
         
+        let peri1:f32 = rec1.calcular_perimetro();
+        assert_eq!(peri1, 12.0);
+        let peri2:f32 = rec2.calcular_perimetro();
+        assert_ne!(peri2, 10.0);
+        
+        let area1:f32 = rec1.calcular_area();
+        assert_eq!(area1, 8.0);
+        let area2:f32 = rec2.calcular_area();
+        assert_ne!(area2, 10.0);
+        
+        let cuadrado1:bool = rec1.es_cuadrado();
+        assert_eq!(cuadrado1, false);
+        let cuadrado2:bool = rec2.es_cuadrado();
+        assert_eq!(cuadrado2, true);
     }
 }
