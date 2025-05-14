@@ -49,4 +49,42 @@ mod tests {
         let cuadrado2:bool = rec2.es_cuadrado();
         assert_eq!(cuadrado2, true);
     }
+
+    #[test]
+    fn test_fecha(){
+        let mut fecha1 = tp3::ejercicio3::Fecha::new(2, 4, 2023);
+        let mut fecha2 = tp3::ejercicio3::Fecha::new(2, 4, 2024);
+        let mut fecha3 = tp3::ejercicio3::Fecha::new(2, 4, 2022);
+        let mut fecha4 = tp3::ejercicio3::Fecha::new(29, 2, 2020);
+        let mut fecha5 = tp3::ejercicio3::Fecha::new(29, 2, 1900);
+        let mut fecha6 = tp3::ejercicio3::Fecha::new(31, 4, 2021);
+
+        // assert_eq!(fecha1.to_string(), "2-4-2023");
+        // assert_eq!(fecha2.to_string(), "2-4-2024");
+
+        assert_eq!(fecha1.es_biciesto(), false);
+        assert_eq!(fecha2.es_biciesto(), true);
+        assert_eq!(fecha3.es_biciesto(), false);
+        assert_eq!(fecha4.es_biciesto(), true);
+        assert_eq!(fecha5.es_biciesto(), false);
+        assert_eq!(fecha6.es_biciesto(), false);
+
+        assert_eq!(fecha1.es_fecha_valida(), true);
+        assert_eq!(fecha4.es_fecha_valida(), true);
+        assert_eq!(fecha5.es_fecha_valida(), false);
+        assert_eq!(fecha6.es_fecha_valida(), false);
+
+        //fecha1.sumar_dias(365);
+        //assert_eq!(fecha1.es_fecha_valida(), true);
+        //fecha4.sumar_dias(2);
+        //assert_eq!(fecha4.to_string(), "2-3-2020");
+
+        //fecha1.restar_dias(365);
+        //assert_eq!(fecha1.es_fecha_valida(), true);
+        //fecha4.restar_dias(30);
+        //assert_eq!(fecha4.to_string(), "30-1-2020");
+
+        assert_eq!(fecha1.es_mayor(fecha2), true);
+        assert_eq!(fecha6.es_mayor(fecha5), false);
+    }
 }
