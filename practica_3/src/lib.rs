@@ -121,4 +121,26 @@ mod tests {
         assert_eq!(prod1.calcular_precio_final(21.0, 10.0), 111.0);
         assert_eq!(prod2.calcular_precio_final(20.0, 10.0), 220.0);
     }
+
+    #[test]
+    fn test_estudiante(){
+        let mut est1 = tp3::ejercicio6::Estudiante::new("Lucas".to_string(), 1);
+        let mut est2 = tp3::ejercicio6::Estudiante::new("Fede".to_string(), 2);
+        let ex1 = tp3::ejercicio6::Examen::new("Matematica".to_string(), 8.0);
+        let ex2 = tp3::ejercicio6::Examen::new("Fisica".to_string(), 9.0);
+        let ex3 = tp3::ejercicio6::Examen::new("Quimica".to_string(), 7.0);
+
+        est1.examenes.push(ex1);
+        est1.examenes.push(ex2);
+        est2.examenes.push(ex3);
+
+        assert_eq!(est1.obtener_promedio(), 8.5);
+        assert_eq!(est2.obtener_promedio(), 7.0);
+
+        assert_eq!(est1.obtener_calificacion_mas_alta(), 9.0);
+        assert_eq!(est2.obtener_calificacion_mas_alta(), 7.0);
+
+        assert_eq!(est1.obtener_calificacion_mas_baja(), 8.0);
+        assert_eq!(est2.obtener_calificacion_mas_baja(), 7.0);
+    }
 }
