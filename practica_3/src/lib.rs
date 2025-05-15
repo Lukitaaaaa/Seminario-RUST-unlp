@@ -87,4 +87,23 @@ mod tests {
         assert_eq!(fecha1.es_mayor(fecha2), true);
         assert_eq!(fecha6.es_mayor(fecha5), false);
     }
+
+    #[test]
+    fn test_triangulo(){
+        let mut triangulo1 = tp3::ejercicio4::Triangulo::new(3.0, 4.0, 5.0);
+        let mut triangulo2 = tp3::ejercicio4::Triangulo::new(2.0, 2.0, 2.0);
+        let mut triangulo3 = tp3::ejercicio4::Triangulo::new(2.0, 2.0, 3.0);
+
+        assert_eq!(triangulo1.determinar_tipo(), "Escaleno");
+        assert_eq!(triangulo2.determinar_tipo(), "Equilátero");
+        assert_eq!(triangulo3.determinar_tipo(), "Isósceles");
+
+        assert_eq!(triangulo1.calcular_area(), 6.0);
+        assert_eq!(triangulo2.calcular_area(), 1.7320508075688772); 
+        assert_eq!(triangulo3.calcular_area(), 1.984313483298443);
+
+        assert_eq!(triangulo1.calcular_perimetro(), 12.0);
+        assert_eq!(triangulo2.calcular_perimetro(), 6.0);
+        assert_eq!(triangulo3.calcular_perimetro(), 7.0);
+    }
 }
