@@ -90,9 +90,9 @@ mod tests {
 
     #[test]
     fn test_triangulo(){
-        let mut triangulo1 = tp3::ejercicio4::Triangulo::new(3.0, 4.0, 5.0);
-        let mut triangulo2 = tp3::ejercicio4::Triangulo::new(2.0, 2.0, 2.0);
-        let mut triangulo3 = tp3::ejercicio4::Triangulo::new(2.0, 2.0, 3.0);
+        let triangulo1 = tp3::ejercicio4::Triangulo::new(3.0, 4.0, 5.0);
+        let triangulo2 = tp3::ejercicio4::Triangulo::new(2.0, 2.0, 2.0);
+        let triangulo3 = tp3::ejercicio4::Triangulo::new(2.0, 2.0, 3.0);
 
         assert_eq!(triangulo1.determinar_tipo(), "Escaleno");
         assert_eq!(triangulo2.determinar_tipo(), "Equilátero");
@@ -105,5 +105,20 @@ mod tests {
         assert_eq!(triangulo1.calcular_perimetro(), 12.0);
         assert_eq!(triangulo2.calcular_perimetro(), 6.0);
         assert_eq!(triangulo3.calcular_perimetro(), 7.0);
+    }
+
+    #[test]
+    fn test_producto(){
+        let prod1 = tp3::ejercicio5::Producto::new("Producto1".to_string(), 100.0, 1);
+        let prod2 = tp3::ejercicio5::Producto::new("Producto2".to_string(), 200.0, 2);
+        
+        assert_eq!(prod1.calcular_impuestos(21.0), 21.0);
+        assert_eq!(prod2.calcular_impuestos(10.0), 20.0);
+
+        assert_eq!(prod1.calcular_descuento(10.0), 10.0);
+        assert_eq!(prod2.calcular_descuento(5.0), 10.0);
+
+        assert_eq!(prod1.calcular_precio_final(21.0, 10.0), 111.0);
+        assert_eq!(prod2.calcular_precio_final(20.0, 10.0), 220.0);
     }
 }
