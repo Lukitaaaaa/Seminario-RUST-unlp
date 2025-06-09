@@ -1,0 +1,1 @@
+HashMap<ejercicio4::Producto, u32>: Hash

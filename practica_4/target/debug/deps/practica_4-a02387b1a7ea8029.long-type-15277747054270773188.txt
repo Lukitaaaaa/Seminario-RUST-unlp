@@ -1,0 +1,1 @@
+std::collections::HashMap<ejercicio4::Producto, u32>
