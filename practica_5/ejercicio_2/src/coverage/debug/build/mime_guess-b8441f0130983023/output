@@ -1,0 +1,1 @@
+cargo:rustc-env=MIME_TYPES_GENERATED_PATH=C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\mime_guess-b8441f0130983023\out\mime_types_generated.rs

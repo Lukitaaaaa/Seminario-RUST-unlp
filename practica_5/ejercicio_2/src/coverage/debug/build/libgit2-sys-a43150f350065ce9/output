@@ -1,0 +1,627 @@
+cargo:rustc-check-cfg=cfg(libgit2_vendored,)
+cargo:rerun-if-env-changed=LIBGIT2_NO_VENDOR
+cargo:rerun-if-env-changed=LIBGIT2_NO_PKG_CONFIG
+cargo:rerun-if-env-changed=PKG_CONFIG_x86_64-pc-windows-msvc
+cargo:rerun-if-env-changed=PKG_CONFIG_x86_64_pc_windows_msvc
+cargo:rerun-if-env-changed=HOST_PKG_CONFIG
+cargo:rerun-if-env-changed=PKG_CONFIG
+cargo:rerun-if-env-changed=LIBGIT2_STATIC
+cargo:rerun-if-env-changed=LIBGIT2_DYNAMIC
+cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
+cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
+cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64-pc-windows-msvc
+cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64_pc_windows_msvc
+cargo:rerun-if-env-changed=HOST_PKG_CONFIG_PATH
+cargo:rerun-if-env-changed=PKG_CONFIG_PATH
+cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64-pc-windows-msvc
+cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64_pc_windows_msvc
+cargo:rerun-if-env-changed=HOST_PKG_CONFIG_LIBDIR
+cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR
+cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64-pc-windows-msvc
+cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64_pc_windows_msvc
+cargo:rerun-if-env-changed=HOST_PKG_CONFIG_SYSROOT_DIR
+cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
+cargo:rerun-if-env-changed=LIBGIT2_STATIC
+cargo:rerun-if-env-changed=LIBGIT2_DYNAMIC
+cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
+cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
+cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64-pc-windows-msvc
+cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64_pc_windows_msvc
+cargo:rerun-if-env-changed=HOST_PKG_CONFIG_PATH
+cargo:rerun-if-env-changed=PKG_CONFIG_PATH
+cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64-pc-windows-msvc
+cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64_pc_windows_msvc
+cargo:rerun-if-env-changed=HOST_PKG_CONFIG_LIBDIR
+cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR
+cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64-pc-windows-msvc
+cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64_pc_windows_msvc
+cargo:rerun-if-env-changed=HOST_PKG_CONFIG_SYSROOT_DIR
+cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
+cargo:warning=failed to probe system libgit2: Could not run `PKG_CONFIG_ALLOW_SYSTEM_LIBS=1 PKG_CONFIG_ALLOW_SYSTEM_CFLAGS=1 pkg-config --libs --cflags libgit2 'libgit2 >= 1.9.0' 'libgit2 < 1.10.0'`
+The pkg-config command could not be found.
+
+Most likely, you need to install a pkg-config package for your OS.
+
+If you've already installed it, ensure the pkg-config command is one of the
+directories in the PATH environment variable.
+
+If you did not expect this build to link to a pre-installed system library,
+then check documentation of the libgit2-sys crate for an option to
+build the library from source, or disable features or dependencies
+that require pkg-config.
+cargo:rustc-cfg=libgit2_vendored
+libgit2/include\git2\annotated_commit.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\annotated_commit.h
+libgit2/include\git2\apply.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\apply.h
+libgit2/include\git2\attr.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\attr.h
+libgit2/include\git2\blame.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\blame.h
+libgit2/include\git2\blob.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\blob.h
+libgit2/include\git2\branch.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\branch.h
+libgit2/include\git2\buffer.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\buffer.h
+libgit2/include\git2\cert.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\cert.h
+libgit2/include\git2\checkout.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\checkout.h
+libgit2/include\git2\cherrypick.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\cherrypick.h
+libgit2/include\git2\clone.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\clone.h
+libgit2/include\git2\commit.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\commit.h
+libgit2/include\git2\common.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\common.h
+libgit2/include\git2\config.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\config.h
+libgit2/include\git2\credential.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\credential.h
+libgit2/include\git2\credential_helpers.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\credential_helpers.h
+libgit2/include\git2\cred_helpers.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\cred_helpers.h
+libgit2/include\git2\deprecated.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\deprecated.h
+libgit2/include\git2\describe.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\describe.h
+libgit2/include\git2\diff.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\diff.h
+libgit2/include\git2\email.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\email.h
+libgit2/include\git2\errors.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\errors.h
+libgit2/include\git2\experimental.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\experimental.h
+libgit2/include\git2\filter.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\filter.h
+libgit2/include\git2\global.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\global.h
+libgit2/include\git2\graph.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\graph.h
+libgit2/include\git2\ignore.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\ignore.h
+libgit2/include\git2\index.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\index.h
+libgit2/include\git2\indexer.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\indexer.h
+libgit2/include\git2\mailmap.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\mailmap.h
+libgit2/include\git2\merge.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\merge.h
+libgit2/include\git2\message.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\message.h
+libgit2/include\git2\net.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\net.h
+libgit2/include\git2\notes.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\notes.h
+libgit2/include\git2\object.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\object.h
+libgit2/include\git2\odb.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\odb.h
+libgit2/include\git2\odb_backend.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\odb_backend.h
+libgit2/include\git2\oid.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\oid.h
+libgit2/include\git2\oidarray.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\oidarray.h
+libgit2/include\git2\pack.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\pack.h
+libgit2/include\git2\patch.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\patch.h
+libgit2/include\git2\pathspec.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\pathspec.h
+libgit2/include\git2\proxy.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\proxy.h
+libgit2/include\git2\rebase.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\rebase.h
+libgit2/include\git2\refdb.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\refdb.h
+libgit2/include\git2\reflog.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\reflog.h
+libgit2/include\git2\refs.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\refs.h
+libgit2/include\git2\refspec.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\refspec.h
+libgit2/include\git2\remote.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\remote.h
+libgit2/include\git2\repository.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\repository.h
+libgit2/include\git2\reset.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\reset.h
+libgit2/include\git2\revert.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\revert.h
+libgit2/include\git2\revparse.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\revparse.h
+libgit2/include\git2\revwalk.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\revwalk.h
+libgit2/include\git2\signature.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\signature.h
+libgit2/include\git2\stash.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\stash.h
+libgit2/include\git2\status.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\status.h
+libgit2/include\git2\stdint.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\stdint.h
+libgit2/include\git2\strarray.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\strarray.h
+libgit2/include\git2\submodule.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\submodule.h
+libgit2/include\git2\sys\alloc.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\sys\alloc.h
+libgit2/include\git2\sys\commit.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\sys\commit.h
+libgit2/include\git2\sys\commit_graph.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\sys\commit_graph.h
+libgit2/include\git2\sys\config.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\sys\config.h
+libgit2/include\git2\sys\cred.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\sys\cred.h
+libgit2/include\git2\sys\credential.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\sys\credential.h
+libgit2/include\git2\sys\diff.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\sys\diff.h
+libgit2/include\git2\sys\email.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\sys\email.h
+libgit2/include\git2\sys\errors.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\sys\errors.h
+libgit2/include\git2\sys\filter.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\sys\filter.h
+libgit2/include\git2\sys\hashsig.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\sys\hashsig.h
+libgit2/include\git2\sys\index.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\sys\index.h
+libgit2/include\git2\sys\mempack.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\sys\mempack.h
+libgit2/include\git2\sys\merge.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\sys\merge.h
+libgit2/include\git2\sys\midx.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\sys\midx.h
+libgit2/include\git2\sys\odb_backend.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\sys\odb_backend.h
+libgit2/include\git2\sys\openssl.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\sys\openssl.h
+libgit2/include\git2\sys\path.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\sys\path.h
+libgit2/include\git2\sys\refdb_backend.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\sys\refdb_backend.h
+libgit2/include\git2\sys\refs.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\sys\refs.h
+libgit2/include\git2\sys\remote.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\sys\remote.h
+libgit2/include\git2\sys\repository.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\sys\repository.h
+libgit2/include\git2\sys\stream.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\sys\stream.h
+libgit2/include\git2\sys\transport.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\sys\transport.h
+libgit2/include\git2\tag.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\tag.h
+libgit2/include\git2\trace.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\trace.h
+libgit2/include\git2\transaction.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\transaction.h
+libgit2/include\git2\transport.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\transport.h
+libgit2/include\git2\tree.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\tree.h
+libgit2/include\git2\types.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\types.h
+libgit2/include\git2\version.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\version.h
+libgit2/include\git2\worktree.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2\worktree.h
+libgit2/include\git2.h => C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\include\git2.h
+OPT_LEVEL = Some(0)
+TARGET = Some(x86_64-pc-windows-msvc)
+cargo:rerun-if-env-changed=VCINSTALLDIR
+VCINSTALLDIR = None
+cargo:rerun-if-env-changed=VSTEL_MSBuildProjectFullPath
+VSTEL_MSBuildProjectFullPath = None
+cargo:rerun-if-env-changed=VSCMD_ARG_VCVARS_SPECTRE
+VSCMD_ARG_VCVARS_SPECTRE = None
+cargo:rerun-if-env-changed=WindowsSdkDir
+WindowsSdkDir = None
+cargo:rerun-if-env-changed=WindowsSDKVersion
+WindowsSDKVersion = None
+cargo:rerun-if-env-changed=LIB
+LIB = None
+PATH = Some(C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\deps;C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug;C:\Users\lucas\.rustup\toolchains\stable-x86_64-pc-windows-msvc\lib\rustlib\x86_64-pc-windows-msvc\lib;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\FPC\3.2.2\bin\i386-Win32;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\lucas\.cargo\bin;C:\Users\lucas\AppData\Local\Microsoft\WindowsApps;C:\Users\lucas\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\lucas\AppData\Roaming\npm;c:\Users\lucas\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand)
+cargo:rerun-if-env-changed=INCLUDE
+INCLUDE = None
+HOST = Some(x86_64-pc-windows-msvc)
+cargo:rerun-if-env-changed=CC_x86_64-pc-windows-msvc
+CC_x86_64-pc-windows-msvc = None
+cargo:rerun-if-env-changed=CC_x86_64_pc_windows_msvc
+CC_x86_64_pc_windows_msvc = None
+cargo:rerun-if-env-changed=HOST_CC
+HOST_CC = None
+cargo:rerun-if-env-changed=CC
+CC = None
+cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+CRATE_CC_NO_DEFAULTS = None
+CARGO_CFG_TARGET_FEATURE = Some(cmpxchg16b,fxsr,sse,sse2,sse3)
+DEBUG = Some(true)
+cargo:rerun-if-env-changed=CFLAGS
+CFLAGS = None
+cargo:rerun-if-env-changed=HOST_CFLAGS
+HOST_CFLAGS = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64_pc_windows_msvc
+CFLAGS_x86_64_pc_windows_msvc = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64-pc-windows-msvc
+CFLAGS_x86_64-pc-windows-msvc = None
+CARGO_ENCODED_RUSTFLAGS = Some(-Cdebuginfo=2-Cstrip=none--cfg=tarpaulin-Cinstrument-coverage)
+cargo:rerun-if-env-changed=CC_ENABLE_DEBUG_OUTPUT
+apply.c
+annotated_commit.c
+attr.c
+attr_file.c
+attrcache.c
+blame.c
+blob.c
+branch.c
+blame_git.c
+buf.c
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+checkout.c
+cherrypick.c
+cache.c
+clone.c
+commit.c
+config.c
+commit_graph.c
+commit_list.c
+config_cache.c
+config_file.c
+config_list.c
+config_mem.c
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+config_parse.c
+crlf.c
+config_snapshot.c
+delta.c
+diff.c
+diff_driver.c
+describe.c
+diff_file.c
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+diff_generate.c
+diff_parse.c
+diff_print.c
+diff_stats.c
+diff_xdiff.c
+diff_tform.c
+email.c
+fetch.c
+fetchhead.c
+filter.c
+grafts.c
+graph.c
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+hashsig.c
+ident.c
+index.c
+ignore.c
+index_map.c
+indexer.c
+iterator.c
+libgit2.c
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+merge.c
+merge_driver.c
+mailmap.c
+merge_file.c
+message.c
+midx.c
+mwindow.c
+notes.c
+object_api.c
+odb.c
+object.c
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+odb_loose.c
+odb_mempack.c
+odb_pack.c
+oid.c
+oidarray.c
+pack.c
+patch.c
+parse.c
+pack-objects.c
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+patch_parse.c
+patch_generate.c
+path.c
+pathspec.c
+push.c
+reader.c
+rebase.c
+proxy.c
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+refdb.c
+reflog.c
+refdb_fs.c
+refs.c
+remote.c
+refspec.c
+repository.c
+reset.c
+revert.c
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+revparse.c
+revwalk.c
+settings.c
+signature.c
+stash.c
+status.c
+strarray.c
+trace.c
+tag.c
+sysdir.c
+submodule.c
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+transaction.c
+transport.c
+trailer.c
+tree-cache.c
+tree.c
+worktree.c
+date.c
+alloc.c
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+fs_path.c
+errors.c
+filebuf.c
+futils.c
+hash.c
+net.c
+pool.c
+posix.c
+pqueue.c
+regexp.c
+rand.c
+runtime.c
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+sortedcache.c
+str.c
+strlist.c
+thread.c
+tsort.c
+utf8.c
+varint.c
+util.c
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+vector.c
+wildmatch.c
+zstream.c
+auth.c
+auth_gssapi.c
+auth_ntlmclient.c
+auth_sspi.c
+credential.c
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+credential_helpers.c
+git.c
+http.c
+httpclient.c
+httpparser.c
+smart_pkt.c
+smart.c
+local.c
+smart_protocol.c
+ssh_exec.c
+ssh.c
+ssh_libssh2.c
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+openssl.c
+mbedtls.c
+openssl_dynamic.c
+winhttp.c
+openssl_legacy.c
+registry.c
+schannel.c
+socket.c
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+stransport.c
+tls.c
+api.c
+http.c
+xdiffi.c
+llhttp.c
+xemit.c
+xmerge.c
+xhistogram.c
+xpatience.c
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+xprepare.c
+xutils.c
+pcre_byte_order.c
+pcre_chartables.c
+pcre_compile.c
+pcre_config.c
+pcre_dfa_exec.c
+pcre_exec.c
+pcre_fullinfo.c
+pcre_get.c
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+pcre_maketables.c
+pcre_jit_compile.c
+pcre_globals.c
+pcre_newline.c
+pcre_ord2utf8.c
+pcre_refcount.c
+pcre_printint.c
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+pcre_tables.c
+pcre_ucd.c
+pcre_string_utils.c
+pcre_study.c
+pcre_valid_utf8.c
+pcre_xclass.c
+pcre_version.c
+pcreposix.c
+failalloc.c
+stdalloc.c
+dir.c
+error.c
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+map.c
+posix_w32.c
+precompiled.c
+path_w32.c
+thread.c
+utf-conv.c
+process.c
+w32_buffer.c
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+w32_leakcheck.c
+w32_util.c
+collisiondetect.c
+sha1.c
+ubc_check.c
+win32.c
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+cargo:rerun-if-env-changed=AR_x86_64-pc-windows-msvc
+AR_x86_64-pc-windows-msvc = None
+cargo:rerun-if-env-changed=AR_x86_64_pc_windows_msvc
+AR_x86_64_pc_windows_msvc = None
+cargo:rerun-if-env-changed=HOST_AR
+HOST_AR = None
+cargo:rerun-if-env-changed=AR
+AR = None
+cargo:rerun-if-env-changed=ARFLAGS
+ARFLAGS = None
+cargo:rerun-if-env-changed=HOST_ARFLAGS
+HOST_ARFLAGS = None
+cargo:rerun-if-env-changed=ARFLAGS_x86_64_pc_windows_msvc
+ARFLAGS_x86_64_pc_windows_msvc = None
+cargo:rerun-if-env-changed=ARFLAGS_x86_64-pc-windows-msvc
+ARFLAGS_x86_64-pc-windows-msvc = None
+cargo:rustc-link-lib=static=git2
+cargo:rustc-link-search=native=C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out\build
+cargo:root=C:\Users\lucas\OneDrive\Documentos\Licenciatura en Informatica\Seminario-RUST\Practica\practica_5\ejercicio_2\src\coverage\debug\build\libgit2-sys-a43150f350065ce9\out
+cargo:rustc-link-lib=winhttp
+cargo:rustc-link-lib=rpcrt4
+cargo:rustc-link-lib=ole32
+cargo:rustc-link-lib=crypt32
+cargo:rustc-link-lib=secur32
+cargo:rustc-link-lib=advapi32
+cargo:rerun-if-changed=libgit2/include
+cargo:rerun-if-changed=libgit2/src
+cargo:rerun-if-changed=libgit2/deps
