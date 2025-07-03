@@ -1,6 +1,15 @@
 #! [allow(unused)]
 
 use std::collections::HashMap;
+use std::fmt::Display;
+use chrono::NaiveDateTime;
+struct NoSuperanElMinimo(String);
+
+impl Display for NoSuperanElMinimo {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        write!(f, "No hay compras que superen el monto mínimo de {}", self.0)
+    }
+}
 
 #[derive(Debug,PartialEq, Clone, Eq, Hash)]
 enum Categoria{
@@ -12,13 +21,21 @@ enum Categoria{
 }
 
 #[derive(Clone, Debug, PartialEq, Eq, Hash)]
+struct Informe {
+    fecha: String,
+    productos_vendidos: HashMap<Producto, u32>, 
+    monto_final: f64,
+    medio_pago: MedioPago,
+}
+
+#[derive(Clone, Debug, PartialEq, Eq, Hash)]
 struct Producto{
     nombre: String,
     precio: u32,
     categoria: Categoria,
 }
 
-#[derive(Debug, Hash, PartialEq, Eq, Clone)]
+#[derive(Debug, Hash, PartialEq, Eq, Clone, Copy)]
 struct Cliente {
     nombre: String,
     apellido: String,
@@ -53,6 +70,12 @@ struct Venta {
 
 struct SistemaVentas {
     ventas: Vec<Venta>,
+}
+
+impl Informe{
+    fn new(echa: String, productos_vendidos: HashMap<Producto, u32>, monto_final: f64, medio_pago: MedioPago) -> Self {
+        Informe { fecha, productos_vendidos, monto_final, medio_pago }
+    } 
 }
 
 impl Venta{
@@ -152,6 +175,30 @@ impl SistemaVentas {
         }
         total
     }
+
+    fn get_historial_compras(id: u32, monto_minimo: f64) -> Result<Informe, NoSuperanElMinimo> {
+        let mut productos_vendidos: HashMap<Producto, u32> = HashMap::new();
+    
+        let mut monto_final: f64 = 0.0;
+        let mut fecha = crono::Local::now().format("%d-%m-%Y %H:%M:%S").to_string();
+        let mut medio_pago = MedioPago::Efectivo; // Valor por defecto
+
+        let ventas_del_cliente:  = self.iter().filter(|venta| venta.cliente.dni == id.clone());
+        let ventas_superadas_por_el_minimo = ventas_del_cliente.clone().any(|venta| {
+            venta.productos.iter().any(|(producto, cantidad)| {
+                let precio_final = Venta::aplicar_descuento(producto.clone()) * (*cantidad as f64);
+                monto_final += precio_final;
+                precio_final >= monto_minimo
+            })
+        });
+
+        if let Some(ventas) = ventas_superadas_por_el_minimo {
+            let informe = Informe::new(fecha, productos_vendidos, monto_final, medio_pago);
+            return Ok(informe);
+        }else {
+            return Err(NoSuperanElMinimo(monto_minimo.to_string()));
+        }
+    }
 }
 
 #[cfg(test)]
@@ -237,6 +284,7 @@ mod tests {
         assert_eq!(sistema.ventas_por_categoria(Categoria::Hogar), 1);
     }
 
+    #[test]
     fn test_sistema_ventas_por_vendedor() {
         let mut sistema = SistemaVentas::new();
         let cliente = Cliente::new(
@@ -257,5 +305,29 @@ mod tests {
         sistema.crear_venta(3, "03-01-2023".to_string(), cliente, vendedor1, MedioPago::TransferenciaBancaria, productos1.clone());
         assert_eq!(sistema.ventas_por_vendedor(1), 2);
         assert_eq!(sistema.ventas_por_vendedor(2), 1);
+    }
+
+    #[test]
+    fn test_get_historial_compras() {
+        let mut sistema = SistemaVentas::new();
+        let cliente = Cliente::new(
+            String::from("Lucas"),
+            String::from("Martinez"),
+            String::from("Calle Real 123"),
+            12345678,
+            Some(String::from("lucas@gamil.com"))
+        );
+
+        let vendedor = Vendedor::new(1, 5, 30000);
+        let producto1 = Producto::new(String::from("Laptop"), 1000, Categoria::Electronica);
+        let producto2 = Producto::new(String::from("Camisa"), 200, Categoria::Ropa);
+        let productos1 = HashMap::from([(producto1.clone(), 1)]);
+        let productos2 = HashMap::from([(producto2.clone(), 3)]);
+        sistema.crear_venta(1, "01-01-2023".to_string(), cliente.clone(), vendedor.clone(), MedioPago::Efectivo, productos1);
+        sistema.crear_venta(2, "02-01-2023".to_string(), cliente.clone(), vendedor.clone(), MedioPago::TarjetaCredito, productos2);
+        sistema.crear_venta(3, "03-01-2023".to_string(), cliente, vendedor, MedioPago::TransferenciaBancaria, productos1);
+
+        let resultado = SistemaVentas::get_historial_compras(cliente.dni, 100.0);
+        assert!(resultado.is_ok());
     }
 }
